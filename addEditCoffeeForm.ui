@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTableWidget" name="table">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>801</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>114</number>
+   </attribute>
+   <column>
+    <property name="text">
+     <string>ID</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Название сорта</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Степень обжарки</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Молотый/В зёрнах</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Описание вкуса</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Цена</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Объём упаковки</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="comp_btn">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>470</y>
+     <width>781</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Применить</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="change_layout" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>140</y>
+     <width>781</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="name_lbl_2">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>9</y>
+      <width>117</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Новое название сорта:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="name_v_2">
+    <property name="geometry">
+     <rect>
+      <x>141</x>
+      <y>9</y>
+      <width>601</width>
+      <height>19</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="step_lbl_2">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>34</y>
+      <width>126</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Новая степень обжарки:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="step_v_2">
+    <property name="geometry">
+     <rect>
+      <x>141</x>
+      <y>34</y>
+      <width>601</width>
+      <height>19</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="mol_zern_lbl_2">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>59</y>
+      <width>94</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Молотый/В зёрнах</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="mol_zern_v_2">
+    <property name="geometry">
+     <rect>
+      <x>141</x>
+      <y>59</y>
+      <width>601</width>
+      <height>19</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="descr_taste_lbl_2">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>84</y>
+      <width>117</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Новое описание вкуса:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="descr_taste_v_2">
+    <property name="geometry">
+     <rect>
+      <x>141</x>
+      <y>84</y>
+      <width>601</width>
+      <height>19</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="pricelbl_2">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>109</y>
+      <width>62</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Новая цена:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="price_v_2">
+    <property name="geometry">
+     <rect>
+      <x>141</x>
+      <y>109</y>
+      <width>601</width>
+      <height>18</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="vol_of_package_lbl_2">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>133</y>
+      <width>122</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Новый объём упаковки:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="vol_of_package_v_2">
+    <property name="geometry">
+     <rect>
+      <x>141</x>
+      <y>133</y>
+      <width>601</width>
+      <height>19</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>160</y>
+      <width>761</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Отметьте данные, которые хотите изменить. Незаполненные данные останутся прежними.</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="name_cb">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>9</y>
+      <width>16</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Name_sort</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="step_cb">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>34</y>
+      <width>16</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>D_roasting</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="mol_zern_cb">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>59</y>
+      <width>16</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ground_or_In_grains</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="descr_taste_cb">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>84</y>
+      <width>16</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Descr_of_taste</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="price_cb">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>109</y>
+      <width>16</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Price</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="vol_of_package_cb">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>133</y>
+      <width>16</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Volume_of_package_gr</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="id_layout" native="true">
+   <property name="geometry">
+    <rect>
+     <x>18</x>
+     <y>125</y>
+     <width>321</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>1</y>
+      <width>256</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Введите ID записи, которую Вы хотите изменить:</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="id_sb">
+    <property name="geometry">
+     <rect>
+      <x>263</x>
+      <y>1</y>
+      <width>33</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="delete_layout" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>130</y>
+     <width>321</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>1</y>
+      <width>256</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Введите ID записи, которую Вы хотите удалить:</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="id_del_sb">
+    <property name="geometry">
+     <rect>
+      <x>263</x>
+      <y>1</y>
+      <width>33</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>100</y>
+     <width>781</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QRadioButton" name="add_rb">
+      <property name="text">
+       <string>Добавление записи</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="change_rb">
+      <property name="text">
+       <string>Изменение записи</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="delete_rb">
+      <property name="text">
+       <string>Удаление записи</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="add_layout" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>130</y>
+     <width>781</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="name_lbl">
+      <property name="text">
+       <string>Название сорта:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="name_v"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="step_lbl">
+      <property name="text">
+       <string>Степень обжарки:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="step_v"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="mol_zern_lbl">
+      <property name="text">
+       <string>Молотый/В зёрнах</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="mol_zern_v"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="descr_taste_lbl">
+      <property name="text">
+       <string>Описание вкуса:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLineEdit" name="descr_taste_v"/>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="pricelbl">
+      <property name="text">
+       <string>Цена:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLineEdit" name="price_v"/>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="vol_of_package_lbl">
+      <property name="text">
+       <string>Объём упаковки:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QLineEdit" name="vol_of_package_v"/>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
